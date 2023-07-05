@@ -31,7 +31,7 @@
     >
       <iframe :src="attachmentSrc" frameborder="0" width="100%" height="800"></iframe>
     </el-dialog>
-    <el-button type="primary" @click="close">关s闭</el-button>
+    <el-button type="primary" @click="close">关闭</el-button>
   </div>
 </template>
 
