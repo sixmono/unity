@@ -59,11 +59,15 @@ export default {
         },
         {
           name: "example3.txt",
-          path: "https://vfdgfdsgdfsgfg/attachment/example3.txt",
+          path: "../assets/顺丰电子发票.pdf",
         },
         {
           name: "example4.xlsx",
           path: "https://vfdgfdsgdfsgfg/attachment/example4.xlsx",
+        },
+        {
+          name: "example4.ppt",
+          path: "",
         },
       ],
     };
@@ -75,8 +79,7 @@ export default {
       // 根据文件格式显示预览内容
       const fileExtension = attachment.path.split(".").pop().toLowerCase();
       if (fileExtension === "xlsx" || fileExtension === "docx") {
-        this.attachmentSrc =
-          "https://view.officeapps.live.com/op/view.aspx?src=" + attachment.path;
+        this.attachmentSrc = "http://127.0.0.1:8012/onlinePreview?url=" + attachment.path;
       } else {
         this.attachmentSrc = attachment.path;
       }
@@ -84,6 +87,7 @@ export default {
     },
     close() {
       this.previewDialog = false;
+      console.log("1234567");
     },
   },
 };
