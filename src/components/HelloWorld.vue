@@ -48,26 +48,26 @@ export default {
       attachmentSrc: "",
       attachmentList: [
         {
-          name: "example1.docx",
+          name: "阿里docx链接",
           path:
             "http://allen2023-06-09.oss-cn-beijing.aliyuncs.com/world.doc?Expires=1688576856&OSSAccessKeyId=TMP.3KdCDaVhtJEFwiwSLsGY64JxdzpJNtvX7eJWFoHkSrE7HHq69GNzzR6DEM6LZuoqFZ6QSFQEs5vR8xXdrx9hkrWdk6GkJD&Signature=erSCKBh%2BLsYu%2BH6mu5T1sDZVhGQ%3D",
         },
         {
-          name: "example2.pdf",
+          name: "网链pdf文件",
           path:
             "http://storage.xuetangx.com/public_assets/xuetangx/PDF/PlayerAPI_v1.0.6.pdf",
         },
         {
-          name: "example3.txt",
+          name: "本地发票文件",
           path: "../assets/顺丰电子发票.pdf",
         },
         {
-          name: "example4.xlsx",
+          name: "",
           path: "https://vfdgfdsgdfsgfg/attachment/example4.xlsx",
         },
         {
-          name: "example4.ppt",
-          path: "",
+          name: "加密ppt文件",
+          path: "https://www.kdocs.cn/l/cj3hwGhj4aw5",
         },
       ],
     };
@@ -79,7 +79,8 @@ export default {
       // 根据文件格式显示预览内容
       const fileExtension = attachment.path.split(".").pop().toLowerCase();
       if (fileExtension === "xlsx" || fileExtension === "docx") {
-        this.attachmentSrc = "http://127.0.0.1:8012/onlinePreview?url=" + attachment.path;
+        this.attachmentSrc =
+          "https://file.kkview.cn/onlinePreview?url=" + attachment.path;
       } else {
         this.attachmentSrc = attachment.path;
       }
@@ -87,7 +88,6 @@ export default {
     },
     close() {
       this.previewDialog = false;
-      console.log("1234567");
     },
   },
 };
