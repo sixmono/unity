@@ -48,9 +48,8 @@ export default {
       attachmentSrc: "",
       attachmentList: [
         {
-          name: "阿里docx链接",
-          path:
-            "http://allen2023-06-09.oss-cn-beijing.aliyuncs.com/world.doc?Expires=1688576856&OSSAccessKeyId=TMP.3KdCDaVhtJEFwiwSLsGY64JxdzpJNtvX7eJWFoHkSrE7HHq69GNzzR6DEM6LZuoqFZ6QSFQEs5vR8xXdrx9hkrWdk6GkJD&Signature=erSCKBh%2BLsYu%2BH6mu5T1sDZVhGQ%3D",
+          name: "world文档",
+          path: "https://kdocs.cn/l/ceXlIsmoXQY4",
         },
         {
           name: "网链pdf文件",
@@ -58,15 +57,7 @@ export default {
             "http://storage.xuetangx.com/public_assets/xuetangx/PDF/PlayerAPI_v1.0.6.pdf",
         },
         {
-          name: "本地发票文件",
-          path: "../assets/顺丰电子发票.pdf",
-        },
-        {
-          name: "",
-          path: "https://vfdgfdsgdfsgfg/attachment/example4.xlsx",
-        },
-        {
-          name: "加密ppt文件",
+          name: "ppt文件",
           path: "https://www.kdocs.cn/l/cj3hwGhj4aw5",
         },
       ],
